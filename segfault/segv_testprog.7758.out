@@ -1,0 +1,53 @@
+0x00007ff14d78c30c in __libc_waitpid (pid=7759, stat_loc=stat_loc@entry=0x7ffd8fc5d6c0, options=options@entry=0) at ../sysdeps/unix/sysv/linux/waitpid.c:31
+31	../sysdeps/unix/sysv/linux/waitpid.c: No such file or directory.
+#0  0x00007ff14d78c30c in __libc_waitpid (pid=7759, stat_loc=stat_loc@entry=0x7ffd8fc5d6c0, options=options@entry=0) at ../sysdeps/unix/sysv/linux/waitpid.c:31
+        resultvar = 18446744073709551104
+        oldtype = 1302832352
+#1  0x00007ff14d71618b in do_system (line=<optimized out>) at ../sysdeps/posix/system.c:148
+        __result = <optimized out>
+        _buffer = {__routine = 0x7ff14d716430 <cancel_handler>, __arg = 0x7ffd8fc5d69c, __canceltype = 0, __prev = 0x7ff14de9e810}
+        _avail = 0
+        status = -1882859792
+        save = <optimized out>
+        pid = 7759
+        sa = {__sigaction_handler = {sa_handler = 0x1, sa_sigaction = 0x1}, sa_mask = {__val = {65536, 0 <repeats 15 times>}}, sa_flags = 0, sa_restorer = 0x7ffd8fc5d8a0}
+        omask = {__val = {1024, 8162903177822217, 140674362903168, 140674371021336, 64, 64, 140727015561314, 140727015561520, 7758, 140727015563264, 0, 140674363186818, 6704, 206158430256, 140727015561248, 140674368792352}}
+#2  0x00007ff14da7e48c in segv_handler () from ./segv_handler.so
+No symbol table info available.
+#3  <signal handler called>
+No locals.
+#4  0x00000000004004d7 in another_function ()
+No symbol table info available.
+#5  0x000000000040050c in foo ()
+No symbol table info available.
+#6  0x000000000040051c in main ()
+No symbol table info available.
+
+Thread 1 (process 7758):
+#0  0x00007ff14d78c30c in __libc_waitpid (pid=7759, stat_loc=stat_loc@entry=0x7ffd8fc5d6c0, options=options@entry=0) at ../sysdeps/unix/sysv/linux/waitpid.c:31
+        resultvar = 18446744073709551104
+        oldtype = 1302832352
+#1  0x00007ff14d71618b in do_system (line=<optimized out>) at ../sysdeps/posix/system.c:148
+        __result = <optimized out>
+        _buffer = {__routine = 0x7ff14d716430 <cancel_handler>, __arg = 0x7ffd8fc5d69c, __canceltype = 0, __prev = 0x7ff14de9e810}
+        _avail = 0
+        status = -1882859792
+        save = <optimized out>
+        pid = 7759
+        sa = {__sigaction_handler = {sa_handler = 0x1, sa_sigaction = 0x1}, sa_mask = {__val = {65536, 0 <repeats 15 times>}}, sa_flags = 0, sa_restorer = 0x7ffd8fc5d8a0}
+        omask = {__val = {1024, 8162903177822217, 140674362903168, 140674371021336, 64, 64, 140727015561314, 140727015561520, 7758, 140727015563264, 0, 140674363186818, 6704, 206158430256, 140727015561248, 140674368792352}}
+#2  0x00007ff14da7e48c in segv_handler () from ./segv_handler.so
+No symbol table info available.
+#3  <signal handler called>
+No locals.
+#4  0x00000000004004d7 in another_function ()
+No symbol table info available.
+#5  0x000000000040050c in foo ()
+No symbol table info available.
+#6  0x000000000040051c in main ()
+No symbol table info available.
+A debugging session is active.
+
+	Inferior 1 [process 7758] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
